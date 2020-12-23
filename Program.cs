@@ -27,7 +27,7 @@ namespace game
                 {
                     case 'y':
                         Console.Clear();
-                        Console.WriteLine("\n\t\t\t----- ПЯТНАШКИ -----");
+                        
                         GameField field = new GameField();
                         field.FillOutField();
                         field.ShowField();
@@ -133,7 +133,8 @@ namespace game
 
         public void ShowField()
         {
-          
+            Console.Clear();
+            Console.WriteLine("\n\t\t\t----- ПЯТНАШКИ -----");
             Console.WriteLine("Передвигайте пустую клеточку чтобы расположить числа по порядку от 1 до 15: \n");
             for (int i = 0; i < field.GetLength(0); i++)
             {
